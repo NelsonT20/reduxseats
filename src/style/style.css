@@ -1,0 +1,43 @@
+.seat{
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-image: url("../assets/wall3.jpg");
+}
+
+body{
+    background-image: url("../assets/wall4.jpg");
+    background-color: #474199;
+}
+
+div{
+    color: #FFC400;
+}
+
+header {
+    height: 100px;
+    border: 1px solid black;
+    color: #FFC400;
+    background-image: url("../assets/wall3.jpg");
+}
+
+li{
+    background-image: url("../assets/wall3.jpg");
+}
+
+.title {
+    font-size: 25px;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.seat-list{
+    width: 150px;
+    height: 50px;
+    color: #FFC400;
+
+}
