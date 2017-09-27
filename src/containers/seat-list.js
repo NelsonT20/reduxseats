@@ -8,7 +8,7 @@ class SeatList extends Component {
     renderList() {
         return this.props.seats.map((seat) => {
             return (
-                <li
+                <li id={seat.number}
                     key={seat.title}
                     onClick={() => this.props.selectSeat(seat)} 
                     className="list-group-item seat-list">
@@ -19,7 +19,6 @@ class SeatList extends Component {
     }
 
     render() {
-        console.log(this.props.seats)
         return (
             <ul className="list-group col-sm-4">
                 {this.renderList()}
