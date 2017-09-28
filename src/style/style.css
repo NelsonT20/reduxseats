@@ -42,5 +42,8 @@ li{
     width: 150px;
     height: 50px;
     color: #FFC400;
+}
 
+.selected{
+    color: #7af442
 }
