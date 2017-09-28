@@ -4,17 +4,6 @@ import { connect } from 'react-redux';
 import '../style/style.css';
 
 class Seat extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.onSelect = this.onSelect.bind(this);
-  //   this.selectedClass = this.selectedClass.bind(this);
-  // }
-
-  // onClick(props){
-  //   this.props.selectSeat(props);
-
-  // }
-
   render() {
     const { id, title, selected } = this.props;
     let className = `list-group-item seat-list`
@@ -24,7 +13,7 @@ class Seat extends Component {
         <div id={id}
           key={title}
           onClick={() => this.props.onClick()}
-          className={selected}>
+          className={className}>
           {title}
         </div>
       </div>
@@ -34,7 +23,6 @@ class Seat extends Component {
 
 Seat.propTypes = {
   selectSeat: PropTypes.func.isRequired,
-  selected: PropTypes.object.isRequired,
 };
 
 export default Seat;

@@ -7,7 +7,6 @@ const INITIAL_STATE = [ {id: 1, title: 'seat #1', selected: false},
                         {id: 4, title: 'seat #4', selected: false}
                       ]
 
-
 export default function(state = INITIAL_STATE, action) {
     switch (action.type){
     case SEAT_SELECTED:
