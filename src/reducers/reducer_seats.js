@@ -10,11 +10,11 @@ const INITIAL_STATE = [ {id: 1, title: 'seat #1', selected: false},
 export default function(state = INITIAL_STATE, action) {
     switch (action.type){
     case SEAT_SELECTED:
-        return state.map(seat => (seat.id == action.payload.selected)
+        return state.map(seat => (seat.id === action.payload.selected)
                             ? {...seat, selected: !seat.selected}
                             : seat);
-
         default:
             return state;
     }
 }
+

@@ -10,10 +10,10 @@ const mapDispatchToProps = dispatch => {
 }
 
 const mapStateToProps = state => {
-  console.log('state', state);
+  console.log('state', state.seats[0]);
   return {
     seats: state.seats,
-  };
+  };  
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SeatList);

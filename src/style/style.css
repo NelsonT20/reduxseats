@@ -1,4 +1,4 @@
-.seat{
+/* .seat{
     width: 200px;
     height: 30px;
     border: 1px solid black;
@@ -6,18 +6,15 @@
     justify-content: center;
     margin: auto;
     background-image: url("../assets/wall3.jpg");
-}
+} */
 
 body{
     background-image: url("../assets/wall4.jpg");
-    background-color: #474199;
 }
 
 div{
     color: #FFC400;
-}
-h3{
-    color: #2E3D92;
+    background-image: url("../assets/wall3.jpg");
 }
 
 header {
@@ -27,9 +24,7 @@ header {
     background-image: url("../assets/wall3.jpg");
 }
 
-li{
-    background-image: url("../assets/wall3.jpg");
-}
+
 
 .title {
     font-size: 25px;
@@ -38,12 +33,16 @@ li{
     justify-content: center;
 }
 
-.seat-list{
+/* .seat-list{
     width: 150px;
     height: 50px;
     color: #FFC400;
-}
+} */
 
 .selected{
-    color: #7af442
+    color:  #BD0009
+}
+
+.unselected {
+    color:  #7af442
 }

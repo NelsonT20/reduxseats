@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
-import '../style/style.css';
+// import '../style/style.css';
 import Seat from './seat';
 
 const SeatList = ({ seats, selectSeat }) => (
+    
     <ul className="list-group col-sm-4">
         {seats.map((seat) => (
             <li>
-                <Seat key ={seat.id}
+                <Seat key ={seat}
                     {...seat}
                     onClick={() => selectSeat(seat)}
                     />
@@ -15,6 +16,7 @@ const SeatList = ({ seats, selectSeat }) => (
         ))}
     </ul>
 )
+
 
 SeatList.propTypes = {
     seats: PropTypes.arrayOf(

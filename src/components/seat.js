@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import '../style/style.css';
 
 class Seat extends Component {
   render() {
     const { id, title, selected } = this.props;
     let className = `list-group-item seat-list`
-    if (selected) { className = `${className} selected` }
+    if (selected) { 
+      className = `${className} selected` 
+    }else if(!selected){
+      className = `${className} unselected` 
+    }
+    
     return (
       <div>
         <div id={id}
