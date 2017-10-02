@@ -10,7 +10,7 @@ const mapDispatchToProps = dispatch => {
 }
 
 const mapStateToProps = state => {
-  console.log('state', state.seats[0]);
+  // console.log('state', state.seats[0]);
   return {
     seats: state.seats,
   };  
