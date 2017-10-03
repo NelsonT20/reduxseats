@@ -1,13 +1,3 @@
-/* .seat{
-    width: 200px;
-    height: 30px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    background-image: url("../assets/wall3.jpg");
-} */
-
 body{
     background-image: url("../assets/wall4.jpg");
 }
@@ -34,19 +24,16 @@ header {
 .seat-list{
     width: 150px;
     height: 50px;
-    color: #FFC400;
+    color:  #7af442;
     background-image: url("../assets/wall3.jpg");
 }
 
 .disabledbutton {
     pointer-events: none;
     opacity: 0.4;
+    overflow: hidden;
 }
 
 .selected{
     color:  #BD0009
-}
-
-.unselected {
-    color:  #7af442
 }
