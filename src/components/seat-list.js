@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import Seat from './seat';
+import Confirm from './confirm';
 
-const SeatList = ({ seats, selectSeat }) => (
+const SeatList = ({ seats, selectSeat, infos, Confirmation }) => (
     <ul className="list-group col-sm-8">
         {seats.map((seat) => (
             <div key={seat.id}>
@@ -12,7 +13,9 @@ const SeatList = ({ seats, selectSeat }) => (
                             {...seat}
                             onClick={() => selectSeat(seat)}
                         />
+                        <Confirm {...seat} onClick={() => Confirmation(seat)}/>
                     </li>
+                    
                 </div>
             </div>
 
@@ -29,7 +32,7 @@ SeatList.propTypes = {
             title: PropTypes.string.isRequired
         }).isRequired
     ).isRequired,
-    selectSeat: PropTypes.func.isRequired
+    selectSeat: PropTypes.func.isRequired,
 }
 
 export default SeatList;
