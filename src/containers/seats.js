@@ -1,16 +1,16 @@
 import SeatList from '../components/seat-list';
 import { connect } from 'react-redux';
-import { selectSeat } from '../actions/index';
+import { selectSeat, Confirmation } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 const mapDispatchToProps = dispatch => {
   return {
     selectSeat: bindActionCreators(selectSeat, dispatch),
+    Confirmation: bindActionCreators(Confirmation, dispatch)
   };
 }
 
 const mapStateToProps = state => {
-  // console.log('state', state.seats[0]);
   return {
     seats: state.seats,
   };  
