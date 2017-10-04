@@ -1,6 +1,6 @@
 
 export const SEAT_SELECTED = 'SEAT_SELECTED';
-export const SELECTED = 'SELECTED';
+export const CONFIRM = 'CONFIRM';
 
 export function selectSeat(seat) {
     const payload = { selected: seat.id }
@@ -11,9 +11,9 @@ export function selectSeat(seat) {
 }
 
 export function Confirmation(seat) {
-    const payload = { selected: seat.id }
+    const payload = { confirm: seat.id }
     return {
-        type: 'SELECTED',
+        type: 'CONFIRM',
         payload
     };
 
